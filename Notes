@@ -6,3 +6,8 @@ Stage 1 - Virtual Environment Setup
  -Kali Linux (Attack machine)
  -Splunk Server (Centralised logging and alerting)
 -Verified all systems boot successfully
+
+Stage 2 - Sysmon & Splunk Install and Configure
+-Created a custom NAT network 
+ -All machines share the 192.168.10.0/24 subnet
+
