@@ -1,1 +1,8 @@
-
+Stage 1 - Virtual Environment Setup
+-Installed VirtualBox on host system
+-Created four virtual machines
+ -Windows server 2022 (active directory domain controller)
+ -Windows 10 (Domain-joined endpoint)
+ -Kali Linux (Attack machine)
+ -Splunk Server (Centralised logging and alerting)
+-Verified all systems boot successfully
