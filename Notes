@@ -7,7 +7,7 @@ Stage 1 - Virtual Environment Setup
  -Splunk Server (Centralised logging and alerting)
 -Verified all systems boot successfully
 
-Stage 2 - Sysmon & Splunk Install and Configure
+Stage 2 - Splunk Install and Configure
 -Created a custom NAT network 
  -All machines share the 192.168.10.0/24 subnet
 -Statically assigned IP to splunk server and verified
@@ -17,4 +17,6 @@ Stage 2 - Sysmon & Splunk Install and Configure
 -Added user to vboxsf
 -Created directory called 'share'
  -Mounted share folder to share directory (Active directory)
+ -Installed Splunk Enterprise from share directory
+-Confirgured to start Splunk on boot
 
