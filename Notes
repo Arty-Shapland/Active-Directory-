@@ -14,4 +14,7 @@ Stage 2 - Sysmon & Splunk Install and Configure
 -Updated packges and installed guest additions, utils
 -Created shared folder 
  -Contains Splunk Enterprise
+-Added user to vboxsf
+-Created directory called 'share'
+ -Mounted share folder to share directory (Active directory)
 
