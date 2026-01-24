@@ -4,12 +4,13 @@ Stage 1 - Virtual Environment Setup
  -Windows server 2022 (active directory domain controller)
  -Windows 10 (Domain-joined endpoint)
  -Kali Linux (Attack machine)
- -Splunk Server (Centralised logging and alerting) [sudo apt-get update && sudo apt-get upgrade -y]
+ -Splunk Server (Centralised logging and alerting) 
+  -Updated. [sudo apt-get update && sudo apt-get upgrade -y]
 -Verified all systems boot successfully
+-Created a custom NAT network
+ -All machines share the 192.168.10.0/24 subnet
 
 Stage 2 - Splunk Install and Configure
--Created a custom NAT network 
- -All machines share the 192.168.10.0/24 subnet
 -Statically assigned IP to splunk server and verified
 -Updated packges and installed guest additions, utils
 -Created shared folder 
@@ -20,3 +21,5 @@ Stage 2 - Splunk Install and Configure
  -Installed Splunk Enterprise from share directory
 -Confirgured to start Splunk on boot
 
+Stage 2 - Splunk Install and Configure
+-Statically assigned IP to splunk server and verified [ip a] [sudo nano /etc/netplan/TAB FOR AUTO COMPLETE]
