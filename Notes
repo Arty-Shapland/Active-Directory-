@@ -4,7 +4,7 @@ Stage 1 - Virtual Environment Setup
  -Windows server 2022 (active directory domain controller)
  -Windows 10 (Domain-joined endpoint)
  -Kali Linux (Attack machine)
- -Splunk Server (Centralised logging and alerting)
+ -Splunk Server (Centralised logging and alerting) [sudo apt-get update && sudo apt-get upgrade -y]
 -Verified all systems boot successfully
 
 Stage 2 - Splunk Install and Configure
