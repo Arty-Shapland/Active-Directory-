@@ -11,15 +11,17 @@ Stage 1 - Virtual Environment Setup
  -All machines share the 192.168.10.0/24 subnet
 
 Stage 2 - Splunk Install and Configure
--Statically assigned IP to splunk server and verified
--Updated packges and installed guest additions, utils
--Created shared folder 
+-Statically assigned IP to splunk server. [ip a] [sudo nano /etc/netplan/TAB FOR AUTO COMPLETE] [sudo netplan apply] 
+ -Verified with ping 
+-Installed guest additions and utils [sudo apt-get install virtualbox {TAB TO SHOW WHATS AVAILABLE}
+-Created a share folder (Active_Directory_Project) [sudo reboot]
  -Contains Splunk Enterprise
--Added user to vboxsf
--Created directory called 'share'
- -Mounted share folder to share directory (Active directory)
- -Installed Splunk Enterprise from share directory
--Confirgured to start Splunk on boot
+-Added user to vboxsf group [sudo adduser arty vboxsf]
+-Created new directory called 'share' [mkdir share] [ls] to check [ls -la] to list
+ -Verified with ls command
+-Mounted shared folder to share directory [sudo mount -t vboxsf -o uid=1000,gid=1000 Active_Directory_Project share/]
+ -Downloaded Splunk Enterprise from share directory [cd share] to enter [ls -la] to list [sudo dpkg -i splunk{TAB TO AUTO FILL}] to install [cd /opt/splunk] go to splunk
+  -[ls -la] show list [sudo -u splunk bash] to become splunk user [cd bin] enter bin [./splunk start] to install splunk [exit] [cd bin] [./splunk enable boot-start -user splunk] splunk to start up on boot
 
-Stage 2 - Splunk Install and Configure
--Statically assigned IP to splunk server and verified [ip a] [sudo nano /etc/netplan/TAB FOR AUTO COMPLETE]
+
+
