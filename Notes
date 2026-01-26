@@ -23,5 +23,7 @@ Stage 2 - Splunk Install and Configure
  -Downloaded Splunk Enterprise from share directory [cd share] to enter [ls -la] to list [sudo dpkg -i splunk{TAB TO AUTO FILL}] to install [cd /opt/splunk] go to splunk
   -[ls -la] show list [sudo -u splunk bash] to become splunk user [cd bin] enter bin [./splunk start] to install splunk [exit] [cd bin] [./splunk enable boot-start -user splunk] splunk to start up on boot
 
+Stage 3 - Installing Sysmon and Splnuk Universal Forwarder on Splunk server and AD server
+-Updated PC name 
 
 
