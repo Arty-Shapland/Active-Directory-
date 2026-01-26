@@ -24,6 +24,14 @@ Stage 2 - Splunk Install and Configure
   -[ls -la] show list [sudo -u splunk bash] to become splunk user [cd bin] enter bin [./splunk start] to install splunk [exit] [cd bin] [./splunk enable boot-start -user splunk] splunk to start up on boot
 
 Stage 3 - Installing Sysmon and Splnuk Universal Forwarder on Splunk server and AD server
--Updated PC name 
+-Updated PC name
+-Stactically assigned IP
+-Verified Splunk is running via web brower
+ -Error loading page
+ -Used command in Splunk server to confirm status, was down [sudo /opt/splunk/bin/splunk status]
+ -Used command to start Splunk [sudo /opt/splunk/bin/splunk start --accept-license]
+ -Used command to confirm port 8000 was listening [sudo ss -tulnp | grep 8000] 
+ -Enabled start on boot [sudo /opt/splunk/bin/splunk enable boot-start]
+ -Confirmed Splunk status by attempting to access via GUI on target machine browser
 
 
